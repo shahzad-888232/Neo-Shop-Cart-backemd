@@ -12,7 +12,7 @@ connectDb()
 
 app.use(express.json())
 app.use(cors({
-    origin:[process.env.ORIGIN,process.env.ORIGIN2],
+    origin:[process.env.ORIGIN, "https://neo-shop-cart.vercel.app"],
     credentials:true
 }))
 app.use(cookieParser())
